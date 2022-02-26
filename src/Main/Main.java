@@ -20,7 +20,7 @@ public class Main {
 //		int nomor = 0;
 		
 		do {
-			System.out.println("Selamat datang di main menu! (1: Input | 2: View Car | 3: View Motorcyle)");
+			System.out.println("Selamat datang di main menu! (1: Input | 2: View Car | 3: View Motorcyle | 4: Exit)");
 			Scanner input = new Scanner(System.in);
 			
 			int menuPilihanUser = input.nextInt();
@@ -129,6 +129,10 @@ public class Main {
 					if (kendaraans.get(pilihanUntukView-1).jenistipeKendaraan.equals("Supercar")) {
 						System.out.printf("Boosting!\n");
 					}
+					
+					else if (kendaraans.get(pilihanUntukView-1).jenistipeKendaraan.equals("supercar")) {
+						System.out.printf("Boosting!\n");
+					}
 					else {
 						System.out.printf("Turning on entertainment system...\n");
 					}
@@ -175,10 +179,17 @@ public class Main {
 					
 					lanjut = 1;
 					
-					//SAVEAN TERAKHIR DISINI! BIKIN HARGA HELM!!
+					System.out.printf("Masukkan harga helm:\n");
+					int hargaHelm;
+					hargaHelm = input.nextInt();
+					System.out.printf("Price: %d\n", hargaHelm);
 				}
 				
-				
+			}
+			
+			else if (menuPilihanUser == 4) {
+				lanjut = 0;
+				System.out.println("Terima kasih telah menggunakan program!");
 			}
 			
 			
