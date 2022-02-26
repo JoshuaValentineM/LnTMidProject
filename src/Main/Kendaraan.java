@@ -22,9 +22,6 @@ public class Kendaraan {
 		this.gasCapacity = gasCapacity;
 		this.wheel = wheel;
 	}
-//	void display() {
-//		System.out.printf("nama mobil: %s \nBrand mobil: %s \nWarna Mobil: %s \n", this.nama, this.brand, this.warna);
-//	}
-//	
+
 	
 }

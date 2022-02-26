@@ -13,18 +13,13 @@ public class Main {
 		
 		ArrayList<Mobil> kendaraans = new ArrayList<Mobil>();
 		ArrayList<Motorcycle> kendaraans1 = new ArrayList<Motorcycle>();
-//		ArrayList<Kendaraan> kendaraans = new ArrayList<Kendaraan>();
-//		ArrayList<Motorcycle> mobils2 = new ArrayList<Motorcycle>();
-//		ArrayList<Mobil> mobils1 = new ArrayList<Mobil>();
-		
-//		int nomor = 0;
 		
 		do {
 			System.out.println("Selamat datang di main menu! (1: Input | 2: View Car | 3: View Motorcyle | 4: Exit)");
 			Scanner input = new Scanner(System.in);
 			
 			int menuPilihanUser = input.nextInt();
-//			System.out.println("Menu pilihan: " +menuPilihanUser);
+
 			
 			String tipeKendaraanPilihan, brand, nama, lisence, jenisTipeKendaraan;
 			int topSpeed, gasCapacity, wheel, entSys, helm, pilihanUntukView;
@@ -88,10 +83,7 @@ public class Main {
 			
 			else if (menuPilihanUser == 2) {
 				lanjut = 0;
-//				Mobil mobil1 = new Mobil(tipeKendaraanPilihan, brand, nama, lisence, topSpeed, gasCapacity, wheel, jenisTipeKendaraan, entSys);
-//				
-//				int i = 1;
-//				mobil1.display(i);
+
 				System.out.printf("|-----|---------------|---------------|\n");
 				System.out.printf("|No   |Type           |Name           |\n");
 
@@ -100,11 +92,7 @@ public class Main {
 					System.out.printf("|%-5d|%-15s|%-15s|\n", i+1, kendaraans.get(i).tipeKendaraan, kendaraans.get(i).nama);
 				}
 				
-//				for (int i = 0; i < kendaraans.size(); i++) {
-//					System.out.printf("|-----|---------------|---------------|\n");
-//					System.out.printf("|%-5d|%-15s|%-15s|\n", i+1, kendaraans.get(i).tipeKendaraan, kendaraans.get(i).nama);
-//				}
-				
+
 				System.out.printf("|-----|---------------|---------------|\n");
 				
 				System.out.println("Pick a vehicle number to test drive [Enter '0' to exit]:");
@@ -114,8 +102,7 @@ public class Main {
 					lanjut = 1;
 				}
 				else {
-					System.out.println("");
-//					
+					System.out.println("");		
 					System.out.printf("Brand: %s\n", kendaraans.get(pilihanUntukView-1).brand);
 					System.out.printf("Name: %s\n", kendaraans.get(pilihanUntukView-1).nama);
 					System.out.printf("License Plate: %s\n", kendaraans.get(pilihanUntukView-1).license);

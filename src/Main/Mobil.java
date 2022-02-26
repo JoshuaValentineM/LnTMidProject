@@ -11,14 +11,5 @@ public class Mobil extends Kendaraan {
 		this.jenistipeKendaraan = jenistipeKendaraan;
 		this.entSys = entSys;
 	}
-	
-
-	
-	
-//	public void display(int i) {
-//		System.out.printf("|-----|---------------|---------------|\n");
-//		System.out.printf("|No   |Type           |Name           |\n");
-//		System.out.printf("|%4d|%14s|%14s|\n", i, this.tipeKendaraan, this.nama);
-//	}
 
 }
